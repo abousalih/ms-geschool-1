@@ -31,14 +31,19 @@ public class MsGeschool1Application implements CommandLineRunner {
 		Filiere f2=new Filiere();
 		Filiere f3=new Filiere();
 		Filiere f4=new Filiere();
+		Filiere f5=new Filiere();
+		
 		f1.setNomFr("TSDI");
 		f2.setNomFr("TSGE");
 		f3.setNomFr("TGI");
-		f3.setNomFr("TSRI");
+		f4.setNomFr("TSRI");
+		f5.setNomFr("SID");
 		
 		formationRepository.save(f1);
 		formationRepository.save(f2);
 		formationRepository.save(f3);
+		formationRepository.save(f4);
+		formationRepository.save(f5);
 		
 		Etudiant e1=new Etudiant();
 		e1.setNomFr("Abousalih");
